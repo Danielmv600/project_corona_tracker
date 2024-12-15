@@ -19,5 +19,5 @@ RUN npm run build
 # Expose the port the app runs on
 EXPOSE 3000
 
-# Start the application (adjust if you're not using a React development server)
-CMD ["npx", "serve", "-s", "build"]
+# Step 10: Start the Nginx server to serve the app
+CMD ["nginx", "-g", "daemon off;"]
