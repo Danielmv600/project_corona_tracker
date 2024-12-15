@@ -36,10 +36,10 @@ jobs:
       # Step 4: Build the application
       - name: Build application
         run: npm run build --if-present
-
+        
       # Step 5: Run tests
       - name: Run tests
-        - run: npm test -- --passWithNoTests
+      - run: npm test -- --passWithNoTests
 
       # Step 6: Log in to Docker Hub
       - name: Log in to Docker Hub
